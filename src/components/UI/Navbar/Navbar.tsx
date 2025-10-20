@@ -70,7 +70,7 @@ const Navbar =()=>{
                         component={RouterLink}
                         variant='h4'
                         to='/'
-                        >Betflix</Typography>
+                        >Kinopoisk</Typography>
                     </Toolbar> 
                 </Container>
             
