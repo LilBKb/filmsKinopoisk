@@ -22,7 +22,7 @@ const Navbar =()=>{
 
 
     const trigger = useScrollTrigger({
-        target:window
+        target: typeof window !== 'undefined' ? window : undefined
     });
     return(
         <Slide appear={false} direction='down' in={!trigger}>

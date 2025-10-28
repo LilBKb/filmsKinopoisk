@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import videojs from "video.js";
 import "video.js/dist/video-js.css";
 import styles from "./styles.module.css";
@@ -147,7 +147,7 @@ export default function VideoPlayer({ filmData }: VideoPlayerProps) {
           setError(null);
         });
 
-        player.on("error", (e: any) => {
+        player.on("error", () => {
           console.error("Video.js error:", player.error());
           setError(`Ошибка видео: ${getErrorMessage(player.error()?.code)}`);
         });
